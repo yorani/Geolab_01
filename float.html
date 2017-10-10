@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	.box1{
+		width: 100%;
+		height: 500px;
+		background: red;
+	}
+	.box2{
+		width: 80%;
+		height: 400px;
+		background: blue;
+	}
+	.box3{
+		width: 60%;
+		/*height: 300px;*/
+		background: yellow;
+	}
+	.test{
+		width: 100px;
+		height: 100px;
+		background: gray;
+		display: inline-block;
+		float: right;
+	}
+	.clear{
+		clear: both;
+	}
+	.clearfix::after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+</style>
+<body>
+	<div class="box1">
+		<div class="box2">
+			<div class="box3 clearfix">
+				<span class="test">span</span>
+				<span class="test" style="float: left;">span</span>
+				<!-- <div class="clear"></div> -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+body{
+	height: 5000px;
+}
+	.box1{
+		width: 100%;
+		height: 500px;
+		background: red;
+	}
+	.box2{
+		width: 80%;
+		height: 400px;
+		background: blue;
+		position: fixed;
+		right: 0;
+		top: 50px;
+	}
+	.box3{
+		width: 60%;
+		height: 300px;
+		background: yellow;
+		position: relative;
+	}
+	.test{
+		width: 100px;
+		height: 100px;
+		background: gray;
+		display: block;	
+	}
+	.first{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+</style>
+<body>
+	<div class="box1">
+		<div class="box2">
+			<div class="box3 clearfix">
+				<span class="test first">span</span>
+				<span class="test">span</span>
+				<!-- <div class="clear"></div> -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
